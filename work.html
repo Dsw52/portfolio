@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Work — Daniel Whitehead</title>
+<meta name="description" content="Selected energy analysis and research projects by Daniel Whitehead." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: "var(--bg)", surface: "var(--surface)", accent: "var(--accent)",
+          "accent-light": "var(--accent-light)", "accent-green": "var(--accent-green)", link: "var(--link)",
+          "btn-bg": "var(--btn-bg)", "btn-bg-hover": "var(--btn-bg-hover)",
+          "text-dark": "var(--text-dark)", "text-mid": "var(--text-mid)",
+          "text-light": "var(--text-light)", border: "var(--border)",
+        },
+        borderRadius: {
+          sm: "var(--radius-sm)", md: "var(--radius-md)", lg: "var(--radius-lg)",
+          xl: "var(--radius-xl)", pill: "var(--radius-pill)",
+        },
+        fontFamily: {
+          sans: ["Outfit", "sans-serif"],
+          serif: ["Libre Baskerville", "Georgia", "serif"],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="container pt-6">
+  <nav class="navbar flex items-center justify-between gap-4 px-4 py-3 md:px-6">
+    <a href="index.html" class="shrink-0">
+      <span class="font-medium text-text-dark whitespace-nowrap">Daniel Whitehead</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="nav-tab">Home</a>
+      <a href="about.html" class="nav-tab">About</a>
+      <a href="work.html" class="nav-tab active">Projects</a>
+      <a href="resume.html" class="nav-tab">Résumé</a>
+      <a href="contact.html" class="nav-tab">Contact</a>
+    </div>
+
+    <button data-menu-toggle aria-expanded="false" aria-label="Toggle menu" class="md:hidden p-2 -mr-2">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 5h18M2 11h18M2 17h18" stroke="var(--text-dark)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div data-mobile-menu class="mobile-menu md:hidden flex-col gap-1 mt-2 card p-3">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="work.html" class="nav-link active">Projects</a>
+    <a href="resume.html" class="nav-link">Résumé</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="nav-link">LinkedIn ↗</a>
+  </div>
+</header>
+
+<!-- ===================== SELECTED WORK ===================== -->
+<section class="container section">
+  <h1 class="text-4xl md:text-5xl mb-12">Selected work</h1>
+
+  <div class="space-y-8">
+
+    <!-- Project 1: Grid Reliability -->
+    <article class="card project-card grid md:grid-cols-2 overflow-hidden">
+      <div class="aspect-video md:aspect-auto order-1 md:order-2 border-b md:border-b-0 md:border-l border-border">
+        <img src="assets/projects/grid_pic.png" alt="Grid reliability incentive framework" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center order-2 md:order-1">
+        <p class="eyebrow mb-3"><span class="text-accent-green">01</span> &nbsp; Grid Reliability</p>
+        <h2 class="text-2xl mb-4">Advancing a Framework for Grid Reliability Incentives in Low- and Middle-Income African Countries</h2>
+        <p class="text-text-mid mb-6">
+          Developed a performance‑based incentive model to improve grid reliability in African
+          power markets, analyzing demand volatility, grid constraints, generation mix, fuel
+          costs, outages, and regulatory impacts on system reliability for 29 nations.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://m.youtube.com/watch?v=TBHafx4PPNY&ra=m" target="_blank" rel="noopener" class="btn btn-secondary">Watch Presentation (YouTube) ↗</a>
+          <a href="assets/projects/Advancing_a_Framework_for_Grid_Reliability_Incentives_in_Low-_and_Middle-Income_African_Countries.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Presentation (PDF) ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2: Bloomberg Battery -->
+    <article class="card project-card grid md:grid-cols-2 overflow-hidden">
+      <div class="aspect-video md:aspect-auto border-b md:border-b-0 md:border-r border-border">
+        <img src="assets/projects/bloomberg-battery.png" alt="Bloomberg battery strategy evaluation" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <p class="eyebrow mb-3"><span class="text-accent-green">02</span> &nbsp; Battery Storage</p>
+        <h2 class="text-2xl mb-4">Bloomberg Battery Strategy Evaluation</h2>
+        <p class="text-text-mid mb-6">
+          Evaluated utility-scale battery energy storage system (BESS) deployment strategy,
+          economic viability, and market arbitrage opportunities using a Bloomberg-ISO dataset.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="assets/projects/bloomberg-battery-strategy.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Presentation (PDF) ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3: ERCOT -->
+    <article class="card project-card grid md:grid-cols-2 overflow-hidden">
+      <div class="aspect-video md:aspect-auto order-1 md:order-2 border-b md:border-b-0 md:border-l border-border">
+        <img src="assets/projects/ERCOT_FORECAST.png" alt="ERCOT load forecasting analysis" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center order-2 md:order-1">
+        <p class="eyebrow mb-3"><span class="text-accent-green">03</span> &nbsp; Load Forecasting</p>
+        <h2 class="text-2xl mb-4">ERCOT Load Forecasting Analysis</h2>
+        <p class="text-text-mid mb-6">
+          Developed neural network and time series models to forecast system-wide load
+          profiles within the ERCOT interconnect.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="assets/projects/ERCOT_Load_Forecasting.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Presentation (PDF) ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 4: CAISO -->
+    <article class="card project-card grid md:grid-cols-2 overflow-hidden">
+      <div class="aspect-video md:aspect-auto border-b md:border-b-0 md:border-r border-border">
+        <img src="assets/projects/caiso-forecasting.png" alt="CAISO load forecasting analysis" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <p class="eyebrow mb-3"><span class="text-accent-green">04</span> &nbsp; Load Forecasting</p>
+        <h2 class="text-2xl mb-4">CAISO Load Forecasting Analysis</h2>
+        <p class="text-text-mid mb-6">
+          Built predictive energy load forecasts using machine learning models for the
+          California Independent System Operator (CAISO) grid region to evaluate net load
+          variance and peak demand pressures.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="assets/projects/caiso_forecasting.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Presentation (PDF) ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-surface mt-10">
+  <div class="container section !pb-16">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-border pb-12 mb-12">
+      <div>
+        <p class="eyebrow mb-3" style="color:var(--accent-green)">LET'S CONNECT</p>
+        <h2 class="text-4xl">Interested in working<br/>together?</h2>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="contact.html" class="btn btn-primary">Get in touch →</a>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <a href="index.html" class="mb-3 inline-block">
+          <span class="text-text-mid font-medium">Daniel Whitehead</span>
+        </a>
+        <p class="text-text-light text-sm max-w-[220px]">Energy analyst focused on renewable integration, grid reliability, and power market economics.</p>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Navigation</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="work.html" class="hover:text-text-dark">Work</a></li>
+          <li><a href="about.html" class="hover:text-text-dark">About</a></li>
+          <li><a href="contact.html" class="hover:text-text-dark">Contact</a></li>
+          <li><a href="resume.html" class="hover:text-text-dark">Résumé</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Connect</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="mailto:whitehead22d@gmail.com" class="hover:text-text-dark">Email</a></li>
+          <li><a href="tel:3175290487" class="hover:text-text-dark">317-529-0487</a></li>
+          <li><a href="assets/resume/Daniel%20Whitehead%20-%20Energy%20Analyst.pdf" target="_blank" rel="noopener" class="hover:text-text-dark">Résumé (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Elsewhere</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="hover:text-text-dark">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/Dsw52" target="_blank" rel="noopener" class="hover:text-text-dark">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-border mt-10 pt-6 text-sm text-text-light">
+      © 2026 Daniel Whitehead. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

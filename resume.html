@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Résumé — Daniel Whitehead</title>
+<meta name="description" content="Experience, education, and skills for Daniel Whitehead." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: "var(--bg)", surface: "var(--surface)", accent: "var(--accent)",
+          "accent-light": "var(--accent-light)", "accent-green": "var(--accent-green)", link: "var(--link)",
+          "btn-bg": "var(--btn-bg)", "btn-bg-hover": "var(--btn-bg-hover)",
+          "text-dark": "var(--text-dark)", "text-mid": "var(--text-mid)",
+          "text-light": "var(--text-light)", border: "var(--border)",
+        },
+        borderRadius: {
+          sm: "var(--radius-sm)", md: "var(--radius-md)", lg: "var(--radius-lg)",
+          xl: "var(--radius-xl)", pill: "var(--radius-pill)",
+        },
+        fontFamily: {
+          sans: ["Outfit", "sans-serif"],
+          serif: ["Libre Baskerville", "Georgia", "serif"],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="container pt-6">
+  <nav class="navbar flex items-center justify-between gap-4 px-4 py-3 md:px-6">
+    <a href="index.html" class="shrink-0">
+      <span class="font-medium text-text-dark whitespace-nowrap">Daniel Whitehead</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="nav-tab">Home</a>
+      <a href="about.html" class="nav-tab">About</a>
+      <a href="work.html" class="nav-tab">Projects</a>
+      <a href="resume.html" class="nav-tab active">Résumé</a>
+      <a href="contact.html" class="nav-tab">Contact</a>
+    </div>
+
+    <button data-menu-toggle aria-expanded="false" aria-label="Toggle menu" class="md:hidden p-2 -mr-2">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 5h18M2 11h18M2 17h18" stroke="var(--text-dark)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div data-mobile-menu class="mobile-menu md:hidden flex-col gap-1 mt-2 card p-3">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="work.html" class="nav-link">Projects</a>
+    <a href="resume.html" class="nav-link active">Résumé</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="nav-link">LinkedIn ↗</a>
+  </div>
+</header>
+
+<!-- ===================== RESUME ===================== -->
+<section class="container section">
+
+  <div class="flex flex-wrap items-start justify-between gap-6 mb-4">
+    <div>
+      <p class="eyebrow mb-3">Experience &amp; background</p>
+      <h1 class="text-5xl mb-4">Résumé</h1>
+    </div>
+    <a href="assets/resume/Daniel%20Whitehead%20-%20Energy%20Analyst.pdf" target="_blank" rel="noopener" class="btn btn-primary shrink-0">Download Resume (PDF) →</a>
+  </div>
+
+  <p class="text-text-mid mb-14">
+    Indianapolis, IN &nbsp;|&nbsp;
+    <a href="mailto:whitehead22d@gmail.com" class="text-link">whitehead22d@gmail.com</a> &nbsp;|&nbsp;
+    <a href="tel:3175290487" class="text-link">317-529-0487</a> &nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="text-link">linkedin.com/in/whiteheaddaniel</a>
+  </p>
+
+  <div class="grid md:grid-cols-[1fr_320px] gap-12">
+    <div>
+
+      <!-- Education -->
+      <h2 class="text-3xl mb-6 flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-accent-green inline-block"></span>Education</h2>
+      <div class="space-y-8 mb-16">
+        <div class="border-t border-border pt-6">
+          <div class="flex flex-wrap justify-between gap-2 mb-1">
+            <h3 class="text-xl font-medium" style="font-family:var(--font-sans)">Master of Environmental Management</h3>
+            <span class="text-text-light text-sm">May 2026</span>
+          </div>
+          <p class="text-accent text-sm mb-3">Duke University — The Nicholas School of the Environment &nbsp;·&nbsp; Durham, NC</p>
+          <p class="text-text-mid mb-2">Concentrations: Energy and Environment, Environmental Analytics and Modeling</p>
+          <p class="text-text-light text-sm">Relevant Coursework: Energy System Modeling, Energy Finance, Energy Economics, Markets for Electric Power, Machine Learning</p>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <div class="flex flex-wrap justify-between gap-2 mb-1">
+            <h3 class="text-xl font-medium" style="font-family:var(--font-sans)">Bachelor of Science, Environmental Science</h3>
+            <span class="text-text-light text-sm">May 2025</span>
+          </div>
+          <p class="text-accent text-sm mb-3">Xavier University — College of Arts and Sciences &nbsp;·&nbsp; Cincinnati, OH</p>
+          <p class="text-text-mid mb-2">3+2 Acceleration &nbsp;·&nbsp; Minor: Peace and Justice Studies &nbsp;·&nbsp; Cum Laude</p>
+          <p class="text-text-light text-sm">Relevant Coursework: Natural Resource Economics, Professional Communication in Science, Climate Change</p>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <h2 class="text-3xl mb-6 flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-accent-green inline-block"></span>Work Experience</h2>
+      <div class="space-y-10 mb-16">
+
+        <div class="border-t border-border pt-6">
+          <div class="flex flex-wrap justify-between gap-2 mb-1">
+            <h3 class="text-xl font-medium" style="font-family:var(--font-sans)">Energy Analyst, Portfolio and Project Development</h3>
+            <span class="text-text-light text-sm">June 2025 – Present</span>
+          </div>
+          <p class="text-accent text-sm mb-4">PSG Energy Group &nbsp;·&nbsp; Remote</p>
+          <ul class="space-y-3 text-text-mid list-disc list-inside">
+            <li>Used Python and Excel to monitor operational performance of a 30+ MW, 80‑site C&amp;I solar portfolio, assess compliance with production‑guarantee requirements (AlsoEnergy), and build automated data pipelines to Power BI dashboards.</li>
+            <li>Managed RFPs, established timelines for procurement and utility service, and analyzed renewable project economics, integrating energy market data, utility tariffs, and rate structures to develop proformas which quantified operational risks.</li>
+            <li>Built financial models and Renewable Energy Certificate strategy models guiding &gt;$1M procurement.</li>
+          </ul>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <div class="flex flex-wrap justify-between gap-2 mb-1">
+            <h3 class="text-xl font-medium" style="font-family:var(--font-sans)">Graduate Research Analyst</h3>
+            <span class="text-text-light text-sm">May 2025 – May 2026</span>
+          </div>
+          <p class="text-accent text-sm mb-4">The World Bank Group &nbsp;·&nbsp; Remote</p>
+          <ul class="space-y-3 text-text-mid list-disc list-inside">
+            <li>Developed a performance‑based incentive model to improve grid reliability in African power markets, analyzing demand volatility, grid constraints, generation mix, fuel costs, outages, and regulatory impacts on system reliability for 29 nations.</li>
+            <li>Collaborated with the World Bank Chief Economist (Africa) to evaluate debt-serviceability and tax-incentive models, utilizing Excel, Python, and SQL for data analysis; communicated findings to technical and non-technical audiences.</li>
+          </ul>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <div class="flex flex-wrap justify-between gap-2 mb-1">
+            <h3 class="text-xl font-medium" style="font-family:var(--font-sans)">Student Research Analyst — Experimental Biology Lab</h3>
+            <span class="text-text-light text-sm">Aug 2023 – Dec 2023</span>
+          </div>
+          <p class="text-accent text-sm mb-4">Xavier University</p>
+          <ul class="space-y-3 text-text-mid list-disc list-inside">
+            <li>Designed and executed research investigating macroinvertebrates within local stream ecosystems to assess low-head dam impacts on water quality and environmental health; collected and conducted statistical analysis of 514 macroinvertebrates.</li>
+          </ul>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <div class="flex flex-wrap justify-between gap-2 mb-1">
+            <h3 class="text-xl font-medium" style="font-family:var(--font-sans)">Museum and Merchandise Manager</h3>
+            <span class="text-text-light text-sm">Aug 2018 – Aug 2024</span>
+          </div>
+          <p class="text-accent text-sm mb-4">Kurt Vonnegut Museum and Library</p>
+          <ul class="space-y-3 text-text-mid list-disc list-inside">
+            <li>Directed on-site operations during high-volume summer shifts and developed an Excel-based staffing and inventory model that improved operational efficiency by 30%.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Academic Projects -->
+      <h2 class="text-3xl mb-2 flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-accent-green inline-block"></span>Academic Projects</h2>
+      <p class="text-text-light text-sm mb-6">Duke University</p>
+      <div class="space-y-8 mb-16">
+
+        <div class="border-t border-border pt-6">
+          <h3 class="text-xl font-medium mb-2" style="font-family:var(--font-sans)">CAISO and ERCOT Energy Load Forecasting</h3>
+          <p class="text-text-mid">Using Python and R, developed neural network and machine-learning forecasting models (using Scikit-learn and XGBoost) to predict load volatility and peak‑risk events using large historical datasets (weather, demand, generation).</p>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <h3 class="text-xl font-medium mb-2" style="font-family:var(--font-sans)">Power Market Analysis: Stress-testing ISO New England Under Seasonal Volatility</h3>
+          <p class="text-text-mid">Analyzed ISO New England grid resilience in Python using EPA eGRID2023 and EIA fuel price data to evaluate power generation assets and system capacities: quantified the risk of extreme weather and fuel supply chain vulnerabilities.</p>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <h3 class="text-xl font-medium mb-2" style="font-family:var(--font-sans)">Regional Power Analysis: 95% Decarbonization &amp; Investment Roadmap</h3>
+          <p class="text-text-mid">Structured a 95% decarbonization roadmap for a regional system operator, optimizing long-term resource adequacy and grid reliability through sensitivity-driven risk modeling of a diversified 10-asset energy portfolio (using Python, Excel, SQL).</p>
+        </div>
+
+        <div class="border-t border-border pt-6">
+          <h3 class="text-xl font-medium mb-2" style="font-family:var(--font-sans)">Renewable Energy Project Finance Modeling (Wind &amp; BESS)</h3>
+          <p class="text-text-mid">Engineered dynamic wind and BESS financial models to calculate IRR, executing multi-variable sensitivity analyses across leverage structures (40%-80%), CAPEX, and O&amp;M escalators to stress-test asset valuations.</p>
+        </div>
+
+      </div>
+
+      <!-- Skills -->
+      <h2 class="text-3xl mb-6 flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-accent-green inline-block"></span>Skills &amp; Certifications</h2>
+      <div class="border-t border-border pt-6 flex flex-wrap gap-2">
+        <span class="tag-pill">Bloomberg Market Concepts Certification</span>
+        <span class="tag-pill">Data Analysis and Visualization</span>
+        <span class="tag-pill">Python</span>
+        <span class="tag-pill">Excel</span>
+        <span class="tag-pill">Power BI</span>
+        <span class="tag-pill">SQL</span>
+        <span class="tag-pill">Energy Load Forecasting</span>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="md:pt-24">
+      <div class="card p-6 mb-6 sticky top-6">
+        <p class="eyebrow mb-5">Connect</p>
+        <div class="space-y-4 text-sm">
+          <div class="flex items-center justify-between border-b border-border pb-4">
+            <span class="text-text-light">Email</span>
+            <a href="mailto:whitehead22d@gmail.com" class="text-link font-medium">whitehead22d@gmail.com</a>
+          </div>
+          <div class="flex items-center justify-between border-b border-border pb-4">
+            <span class="text-text-light">Phone</span>
+            <a href="tel:3175290487" class="text-link font-medium">317-529-0487</a>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-text-light">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="text-link font-medium">View profile ↗</a>
+          </div>
+        </div>
+        <p class="text-text-light text-sm mt-6">Based in Indianapolis, IN — open to relocation.</p>
+      </div>
+      <a href="assets/resume/Daniel%20Whitehead%20-%20Energy%20Analyst.pdf" target="_blank" rel="noopener" class="btn btn-primary w-full justify-center">Download résumé (PDF) →</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-surface mt-10">
+  <div class="container section !pb-16">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-border pb-12 mb-12">
+      <div>
+        <p class="eyebrow mb-3" style="color:var(--accent-green)">LET'S CONNECT</p>
+        <h2 class="text-4xl">Interested in working<br/>together?</h2>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="contact.html" class="btn btn-primary">Get in touch →</a>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <a href="index.html" class="mb-3 inline-block">
+          <span class="text-text-mid font-medium">Daniel Whitehead</span>
+        </a>
+        <p class="text-text-light text-sm max-w-[220px]">Energy analyst focused on renewable integration, grid reliability, and power market economics.</p>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Navigation</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="work.html" class="hover:text-text-dark">Work</a></li>
+          <li><a href="about.html" class="hover:text-text-dark">About</a></li>
+          <li><a href="contact.html" class="hover:text-text-dark">Contact</a></li>
+          <li><a href="resume.html" class="hover:text-text-dark">Résumé</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Connect</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="mailto:whitehead22d@gmail.com" class="hover:text-text-dark">Email</a></li>
+          <li><a href="tel:3175290487" class="hover:text-text-dark">317-529-0487</a></li>
+          <li><a href="assets/resume/Daniel%20Whitehead%20-%20Energy%20Analyst.pdf" target="_blank" rel="noopener" class="hover:text-text-dark">Résumé (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Elsewhere</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="hover:text-text-dark">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/Dsw52" target="_blank" rel="noopener" class="hover:text-text-dark">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-border mt-10 pt-6 text-sm text-text-light">
+      © 2026 Daniel Whitehead. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

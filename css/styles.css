@@ -1,0 +1,328 @@
+/* ============================================================
+   Design tokens — extracted/adapted from the reference site
+   ============================================================ */
+:root {
+  --bg: #eef2f5;
+  --surface: #e0e6ec;
+  --accent: #023e8a;
+  --accent-green: #009639;
+  --carmine: #960019;
+  --accent-light: #d9e2ed;
+  --accent-green-light: #eaf7ef;
+  --hero-hl: #eaf7ef;
+
+  --link: #023e8a;
+  --link-soft: rgba(2, 62, 138, 0.45);
+
+  --btn-bg: #023e8a;
+  --btn-bg-hover: #009639;
+  --btn-text: #ffffff;
+
+  --text-dark: #1c1c1a;
+  --text-mid: #5c5b56;
+  --text-light: #68675f;
+
+  --white: #ffffff;
+  --border: #d8dee4;
+
+  --surface-card: rgba(255, 255, 255, 0.4);
+  --surface-card-strong: rgba(255, 255, 255, 0.65);
+  --surface-card-solid: rgba(255, 255, 255, 0.9);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 100px;
+
+  --tracking-eyebrow: 0.12em;
+  --tracking-eyebrow-tight: 0.08em;
+
+  --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-serif: "Libre Baskerville", Georgia, serif;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.15;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--btn-bg);
+  color: #fff;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================================
+   Layout helpers
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.section {
+  padding-block: 72px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 96px;
+  }
+}
+
+/* ============================================================
+   Eyebrow / label text
+   ============================================================ */
+.eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+
+.eyebrow .accent {
+  color: var(--accent);
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-mid);
+}
+
+/* ============================================================
+   Navbar
+   ============================================================ */
+.navbar {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+  font-size: 15px;
+  color: var(--text-mid);
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-dark);
+}
+
+.nav-link.active {
+  background-color: var(--surface);
+  color: var(--text-dark);
+}
+
+/* Desktop tab-style links (replaces pill nav-links on md+) */
+.nav-tab {
+  font-size: 15px;
+  color: var(--text-mid);
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-tab:hover {
+  color: var(--text-dark);
+  border-bottom-color: var(--accent-green);
+}
+
+.nav-tab.active {
+  color: var(--text-dark);
+  font-weight: 500;
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================
+   Cards / surfaces
+   ============================================================ */
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+}
+
+.project-card {
+  transition: border-color 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent-green);
+}
+
+li::marker {
+  color: var(--accent-green);
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.tag-pill:hover {
+  border-color: var(--accent-green);
+  color: var(--text-dark);
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--white);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-size: 14px;
+  color: var(--text-mid);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background-color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   Highlight / marker under headline text
+   ============================================================ */
+.highlight {
+  background-image: linear-gradient(var(--hero-hl), var(--hero-hl));
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 88%;
+}
+
+/* ============================================================
+   Placeholder image containers
+   ============================================================ */
+.placeholder-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--surface),
+    var(--surface) 10px,
+    #e8ecf0 10px,
+    #e8ecf0 20px
+  );
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--text-light);
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ============================================================
+   Form controls
+   ============================================================ */
+.form-input {
+  width: 100%;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--link);
+}
+
+.form-label {
+  font-size: 14px;
+  color: var(--text-mid);
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* ============================================================
+   Mobile nav
+   ============================================================ */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.open {
+  display: flex;
+}

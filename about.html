@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Daniel Whitehead</title>
+<meta name="description" content="About Daniel Whitehead — mission and background in clean energy and grid reliability." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: "var(--bg)", surface: "var(--surface)", accent: "var(--accent)",
+          "accent-light": "var(--accent-light)", "accent-green": "var(--accent-green)", link: "var(--link)",
+          "btn-bg": "var(--btn-bg)", "btn-bg-hover": "var(--btn-bg-hover)",
+          "text-dark": "var(--text-dark)", "text-mid": "var(--text-mid)",
+          "text-light": "var(--text-light)", border: "var(--border)",
+        },
+        borderRadius: {
+          sm: "var(--radius-sm)", md: "var(--radius-md)", lg: "var(--radius-lg)",
+          xl: "var(--radius-xl)", pill: "var(--radius-pill)",
+        },
+        fontFamily: {
+          sans: ["Outfit", "sans-serif"],
+          serif: ["Libre Baskerville", "Georgia", "serif"],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="container pt-6">
+  <nav class="navbar flex items-center justify-between gap-4 px-4 py-3 md:px-6">
+    <a href="index.html" class="shrink-0">
+      <span class="font-medium text-text-dark whitespace-nowrap">Daniel Whitehead</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="nav-tab">Home</a>
+      <a href="about.html" class="nav-tab active">About</a>
+      <a href="work.html" class="nav-tab">Projects</a>
+      <a href="resume.html" class="nav-tab">Résumé</a>
+      <a href="contact.html" class="nav-tab">Contact</a>
+    </div>
+
+    <button data-menu-toggle aria-expanded="false" aria-label="Toggle menu" class="md:hidden p-2 -mr-2">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 5h18M2 11h18M2 17h18" stroke="var(--text-dark)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div data-mobile-menu class="mobile-menu md:hidden flex-col gap-1 mt-2 card p-3">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link active">About</a>
+    <a href="work.html" class="nav-link">Projects</a>
+    <a href="resume.html" class="nav-link">Résumé</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="nav-link">LinkedIn ↗</a>
+  </div>
+</header>
+
+<!-- ===================== MISSION ===================== -->
+<section class="container section">
+  <div class="max-w-2xl">
+    <p class="eyebrow mb-4">About me</p>
+    <h1 class="text-5xl mb-6">My Mission</h1>
+    <p class="text-text-mid text-lg mb-4">
+      My name is <strong class="text-text-dark font-medium">Daniel Whitehead</strong>, and I am
+      dedicated to accelerating the transition to a clean energy grid.
+    </p>
+    <p class="text-text-mid text-lg mb-6">
+      While climate change poses critical threats to global ecosystems, the power sector
+      remains one of its largest contributors.
+    </p>
+    <p class="bg-accent-light inline text-text-dark font-medium text-lg leading-relaxed px-1">
+      My mission is to develop efficient integration models for renewable energy, driving
+      down power sector emissions without sacrificing grid reliability.
+    </p>
+    <div class="flex flex-wrap gap-3 mt-8">
+      <a href="resume.html" class="btn btn-primary">View résumé →</a>
+      <a href="contact.html" class="btn btn-secondary">Get in touch →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHOTO GRID ===================== -->
+<section class="container !pt-0 section">
+  <p class="eyebrow mb-6 flex items-center gap-2">
+    <span class="w-1.5 h-1.5 rounded-full bg-accent-green inline-block"></span>
+    Outside of work
+  </p>
+  <div class="grid grid-cols-2 md:grid-cols-5 auto-rows-[140px] gap-4">
+    <div class="row-span-2 rounded-lg overflow-hidden border border-border"><img src="assets/about/grad1.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="rounded-lg overflow-hidden border border-border"><img src="assets/about/grad2.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="row-span-2 rounded-lg overflow-hidden border border-border"><img src="assets/about/xu_grad1.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="row-span-2 rounded-lg overflow-hidden border border-border"><img src="assets/about/indy_pic.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="row-span-2 rounded-lg overflow-hidden border border-border"><img src="assets/about/mountain_pic.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="rounded-lg overflow-hidden border border-border"><img src="assets/about/vacation_pic_stt.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="row-span-2 rounded-lg overflow-hidden border border-border"><img src="assets/about/vacation_pic_stt_2.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="rounded-lg overflow-hidden border border-border"><img src="assets/about/footy_pic.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="rounded-lg overflow-hidden border border-border"><img src="assets/about/fashion_pic.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="rounded-lg overflow-hidden border border-border"><img src="assets/about/world_record_pic.png" alt="" class="w-full h-full object-cover" /></div>
+    <div class="rounded-lg overflow-hidden border border-border"><img src="assets/about/mp_presentation_pic.png" alt="" class="w-full h-full object-cover" /></div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-surface mt-10">
+  <div class="container section !pb-16">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-border pb-12 mb-12">
+      <div>
+        <p class="eyebrow mb-3" style="color:var(--accent-green)">LET'S CONNECT</p>
+        <h2 class="text-4xl">Interested in working<br/>together?</h2>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="contact.html" class="btn btn-primary">Get in touch →</a>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <a href="index.html" class="mb-3 inline-block">
+          <span class="text-text-mid font-medium">Daniel Whitehead</span>
+        </a>
+        <p class="text-text-light text-sm max-w-[220px]">Energy analyst focused on renewable integration, grid reliability, and power market economics.</p>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Navigation</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="work.html" class="hover:text-text-dark">Work</a></li>
+          <li><a href="about.html" class="hover:text-text-dark">About</a></li>
+          <li><a href="contact.html" class="hover:text-text-dark">Contact</a></li>
+          <li><a href="resume.html" class="hover:text-text-dark">Résumé</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Connect</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="mailto:whitehead22d@gmail.com" class="hover:text-text-dark">Email</a></li>
+          <li><a href="tel:3175290487" class="hover:text-text-dark">317-529-0487</a></li>
+          <li><a href="assets/resume/Daniel%20Whitehead%20-%20Energy%20Analyst.pdf" target="_blank" rel="noopener" class="hover:text-text-dark">Résumé (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">Elsewhere</p>
+        <ul class="space-y-3 text-sm text-text-mid">
+          <li><a href="https://www.linkedin.com/in/whiteheaddaniel/" target="_blank" rel="noopener" class="hover:text-text-dark">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/Dsw52" target="_blank" rel="noopener" class="hover:text-text-dark">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-border mt-10 pt-6 text-sm text-text-light">
+      © 2026 Daniel Whitehead. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
